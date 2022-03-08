@@ -6,9 +6,17 @@ const RegisterPage = () => {
         <div class="min-h-screen flex justify-center items-center">
             <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
                 <div>
-                    <h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Register An Account</h1>
-                    <p class="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer">Enter credentials to register</p>
+                    <h1 class="text-3xl font-bold text-center mb-4">Register An Account</h1>
+                    <p class="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide">Enter credentials to register</p>
+                    <div class="space-x-4">
+                        <button class="border-2 border-green-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-green-600 transition duration-300">Google</button>
+                        <button class="border-2 border-blue-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-blue-600 transition duration-300">Facebook</button>
+                        <button class="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300">Github</button>
+                    </div>
+                    <br />
+                    <p>or</p>
                 </div>
+                <br />
                 <div class="space-y-4">
                     <input type="text" placeholder="Full Name" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
                     <input type="text" placeholder="Email Addres" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
