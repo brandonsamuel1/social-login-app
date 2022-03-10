@@ -20,7 +20,7 @@ const LoginPage = () => {
                 </div>
                 <br />
                 <div className="space-y-4">
-                    <input type="text" placeholder="Email Addres" className="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
+                    <input type="text" placeholder="Email Address" className="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
                     <input type="text" placeholder="Password" className="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
                 </div>
                 <div className="text-center mt-6">
