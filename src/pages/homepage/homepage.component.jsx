@@ -11,9 +11,6 @@ const Home = () => {
                     <p>SOCIAL LOGIN APP</p>
                 </div>
                 <div className="text-center mt-6">
-                    <Link to='/register'><button className="py-3 w-64 text-xl text-white bg-blue-400 rounded-2xl">REGISTER</button></Link>
-                </div>
-                <div className="text-center mt-6">
                     <Link to='/login'><button className="py-3 w-64 text-xl text-white bg-blue-400 rounded-2xl">LOGIN</button></Link>
                 </div>
             </div>

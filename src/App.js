@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
@@ -45,8 +45,8 @@ class App extends React.Component {
       <div className="App">
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/register' element={<RegisterPage />} />
+          <Route path='/login' element={this.state.currentUser ? <Navigate to="/dashboard" /> : <LoginPage />} />
+          <Route path='/register' element={this.state.currentUser ? <Navigate to="/dashboard" /> : <RegisterPage />} />
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </div>
