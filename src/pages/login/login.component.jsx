@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { signInWithGoogle } from "../../firebase/firebase";
+import { signInWithGoogle, signInWithFacebook } from "../../firebase/firebase";
 
 const LoginPage = () => {
     return (
@@ -12,7 +12,7 @@ const LoginPage = () => {
                     <p className="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide">Enter credentials to login</p>
                     <div className="space-x-4">
                         <button onClick={signInWithGoogle} className="border-2 border-green-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-green-600 transition duration-300">Google</button>
-                        <button className="border-2 border-blue-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-blue-600 transition duration-300">Facebook</button>
+                        <button onClick={signInWithFacebook} className="border-2 border-blue-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-blue-600 transition duration-300">Facebook</button>
                         <button className="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300">Github</button>
                     </div>
                     <br />
